@@ -11,9 +11,9 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Caixa Rápido — 7 Dias">
 <meta property="og:description" content="Em 7 dias, ações simples para atrair clientes e vender mais no salão de beleza.">
-<meta property="og:image" content="https://desafio.marceloemilene.com/hero-agenda.webp">
+<meta property="og:image" content="https://curso.marceloemilene.com/hero-agenda.webp">
 <meta property="og:url" content="https://curso.marceloemilene.com/">
-<link rel="preload" as="image" href="hero-agenda.webp" fetchpriority="high">
+<link rel="preload" as="image" href="hero-agenda.webp" imagesrcset="hero-agenda-480.webp 480w, hero-agenda-720.webp 720w, hero-agenda.webp 864w" imagesizes="(max-width:980px) min(340px, calc(100vw - 40px)), 45vw" fetchpriority="high">
 <link rel="preconnect" href="https://pay.hotmart.com">
 <style>
 :root{
@@ -34,6 +34,7 @@ h1,h2,h3{margin:0;line-height:1.08;font-weight:700;letter-spacing:-.02em}
 p{margin:0}
 .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
 .sec{padding:72px 0}
+.sec.cv{content-visibility:auto;contain-intrinsic-size:auto 900px}
 [id]{scroll-margin-top:64px}
 .sec-creme{background:var(--creme);color:var(--tinta)}
 .sec-creme .rotulo{color:var(--ouro-escuro)}
@@ -235,6 +236,7 @@ footer .copy{font-size:12px;color:#6d6659}
 }
 @media (max-width:640px){
   .sec{padding:54px 0}
+  header{backdrop-filter:none;background:rgba(9,9,9,.97)}
   .hd-meio{display:none}
   .numeros{grid-template-columns:1fr 1fr;gap:22px 14px}
   .dias{grid-template-columns:1fr 1fr}
@@ -264,7 +266,7 @@ footer .copy{font-size:12px;color:#6d6659}
       <h1>Atraia mais clientes.<br><span class="ouro">Venda mais</span><br>no seu salão.</h1>
     </div>
     <a class="hero-img ck" href="https://pay.hotmart.com/U106844978T?sck=site_caixa_rapido" aria-label="Conheça o desafio Caixa Rápido 7 Dias">
-      <img src="hero-agenda.webp" width="864" height="1080" alt="Caixa Rápido — desafio de 7 dias: não é só sobre ter mais agenda" fetchpriority="high" decoding="async">
+      <img src="hero-agenda.webp" srcset="hero-agenda-480.webp 480w, hero-agenda-720.webp 720w, hero-agenda.webp 864w" sizes="(max-width:980px) min(340px, calc(100vw - 40px)), 45vw" width="864" height="1080" alt="Caixa Rápido — desafio de 7 dias: não é só sobre ter mais agenda" fetchpriority="high" decoding="async">
     </a>
     <div class="hero-b">
       <p class="sub">Em 7 dias, aprenda ações simples para atrair clientes e aproveitar melhor cada atendimento — sem trabalhar mais horas ou vender de forma insistente.</p>
@@ -310,7 +312,7 @@ footer .copy{font-size:12px;color:#6d6659}
 </section>
 
 <!-- CAIXA MAIS FORTE -->
-<section class="sec sec-creme">
+<section class="sec cv sec-creme">
   <div class="wrap duas">
     <div>
       <p class="rotulo rv">Pequenas vendas. Um caixa mais forte.</p>
@@ -321,7 +323,7 @@ footer .copy{font-size:12px;color:#6d6659}
 </section>
 
 <!-- CRONOGRAMA -->
-<section class="sec sec-creme" style="padding-top:0">
+<section class="sec cv sec-creme" style="padding-top:0">
   <div class="wrap">
     <p class="rotulo rv">Cronograma do Caixa Rápido</p>
     <h2 class="titulo rv" style="color:var(--tinta)">7 dias. 7 missões.<br>Um caminho visual até seu plano de vendas.</h2>
@@ -349,7 +351,7 @@ footer .copy{font-size:12px;color:#6d6659}
 </section>
 
 <!-- CTA MEIO -->
-<section class="sec centro">
+<section class="sec cv centro">
   <div class="wrap">
     <p class="rotulo rv">Aplicação direta no salão</p>
     <h2 class="titulo rv">Uma missão simples por dia.<br>Uma estratégia para continuar vendendo.</h2>
@@ -360,7 +362,7 @@ footer .copy{font-size:12px;color:#6d6659}
 </section>
 
 <!-- BÔNUS -->
-<section class="sec" style="padding-top:0">
+<section class="sec cv" style="padding-top:0">
   <div class="wrap">
     <p class="rotulo rv">Mais recursos para colocar em prática</p>
     <h2 class="titulo rv">Você também recebe 2 bônus.</h2>
@@ -397,9 +399,9 @@ footer .copy{font-size:12px;color:#6d6659}
 </section>
 
 <!-- PARA VOCÊ -->
-<section class="sec">
+<section class="sec cv">
   <div class="wrap parvoce">
-    <img class="rv" src="oferta.webp" width="800" height="800" alt="Caixa Rápido 7 Dias — mais clientes e mais vendas no seu salão" loading="eager" decoding="async">
+    <img class="rv" src="oferta.webp" width="720" height="720" alt="Caixa Rápido 7 Dias — mais clientes e mais vendas no seu salão" loading="eager" decoding="async">
     <div>
       <p class="rotulo rv">Este desafio é para você</p>
       <h2 class="titulo rv">Você já tem conhecimento e talento. Agora precisa de uma estratégia.</h2>
@@ -415,7 +417,7 @@ footer .copy{font-size:12px;color:#6d6659}
 </section>
 
 <!-- QUEM ENSINA -->
-<section class="sec" style="padding-top:0">
+<section class="sec cv" style="padding-top:0">
   <div class="wrap ensina">
     <img class="rv" src="casal.webp" width="900" height="600" alt="Marcelo e Milene, responsáveis pelo Caixa Rápido 7 Dias" loading="eager" decoding="async">
     <div>
@@ -429,7 +431,7 @@ footer .copy{font-size:12px;color:#6d6659}
 </section>
 
 <!-- OFERTA -->
-<section class="sec oferta">
+<section class="sec cv oferta">
   <div class="wrap centro">
     <p class="rotulo rv">Sua decisão pode começar hoje</p>
     <h2 class="titulo rv">Entre no Caixa Rápido 7 Dias.</h2>
@@ -473,7 +475,7 @@ footer .copy{font-size:12px;color:#6d6659}
 </section>
 
 <!-- FAQ -->
-<section class="sec">
+<section class="sec cv">
   <div class="wrap">
     <p class="rotulo rv">Dúvidas frequentes</p>
     <h2 class="titulo rv">Antes de começar</h2>
@@ -492,7 +494,7 @@ footer .copy{font-size:12px;color:#6d6659}
 </section>
 
 <!-- CAPTURA -->
-<section class="sec" id="captura" style="background:#0c0b09">
+<section class="sec cv" id="captura" style="background:#0c0b09">
   <div class="wrap captura">
     <div>
       <p class="rotulo rv">Ainda não está pronta para comprar?</p>
@@ -512,7 +514,7 @@ footer .copy{font-size:12px;color:#6d6659}
 </section>
 
 <!-- PRIVACIDADE -->
-<section class="sec sec-creme" id="privacidade">
+<section class="sec cv sec-creme" id="privacidade">
   <div class="wrap">
     <p class="rotulo rv">Política de privacidade</p>
     <h2 class="titulo rv" style="color:var(--tinta)">Seus dados, seus direitos.</h2>
