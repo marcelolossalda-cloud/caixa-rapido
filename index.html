@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Caixa Rápido — 7 Dias | Mais clientes e vendas no seu salão</title>
+<meta name="description" content="Desafio prático de 7 dias para cabeleireiras: atraia mais clientes e venda mais no salão com ações simples, sem trabalhar mais horas. Pagamento único de R$ 97 com garantia de 7 dias.">
+<meta name="theme-color" content="#090909">
+<link rel="canonical" href="https://curso.marceloemilene.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Caixa Rápido — 7 Dias">
+<meta property="og:description" content="Em 7 dias, ações simples para atrair clientes e vender mais no salão de beleza.">
+<meta property="og:image" content="https://desafio.marceloemilene.com/hero-agenda.webp">
+<meta property="og:url" content="https://curso.marceloemilene.com/">
+<link rel="preload" as="image" href="hero-agenda.webp" fetchpriority="high">
+<link rel="preconnect" href="https://pay.hotmart.com">
+<style>
+:root{
+  --preto:#090909; --preto-2:#0c0b09; --creme:#f8f2e6; --creme-2:#efe7d6;
+  --tinta:#16120c; --ouro:#d8b364; --ouro-claro:#eccd86; --ouro-escuro:#b8913f;
+  --texto:#ffffff; --texto-suave:#b9b3a8; --texto-creme:#5b5346;
+  --zap:#25d366; --linha:rgba(255,255,255,.12); --linha-creme:rgba(22,18,12,.14);
+  --fonte:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --max:1120px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--preto);color:var(--texto);font-family:var(--fonte);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.08;font-weight:700;letter-spacing:-.02em}
+p{margin:0}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+.sec{padding:72px 0}
+.sec-creme{background:var(--creme);color:var(--tinta)}
+.sec-creme .rotulo{color:var(--ouro-escuro)}
+.sec-creme p{color:var(--texto-creme)}
+.rotulo{font-size:12px;letter-spacing:.18em;font-weight:700;color:var(--ouro);
+  text-transform:uppercase;margin-bottom:18px}
+.titulo{font-size:clamp(28px,5vw,46px)}
+.sub{margin-top:18px;color:var(--texto-suave);font-size:17px;max-width:60ch}
+.ouro{color:var(--ouro)}
+
+/* ---------- cabeçalho ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(9,9,9,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--linha)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;
+  height:62px;width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+.marca{font-size:14px;letter-spacing:.2em;font-weight:700;color:var(--ouro);white-space:nowrap}
+.hd-meio{font-size:11px;letter-spacing:.2em;color:var(--texto-suave);font-weight:600}
+.hd-cta{font-size:11px;letter-spacing:.12em;font-weight:700;padding:9px 16px;
+  border:1px solid var(--ouro);color:var(--ouro);border-radius:4px;text-decoration:none;white-space:nowrap}
+.hd-cta:hover{background:var(--ouro);color:#111}
+
+/* ---------- botões ---------- */
+.btn{display:inline-flex;align-items:center;gap:12px;justify-content:center;
+  background:linear-gradient(180deg,var(--ouro-claro),var(--ouro-escuro));
+  color:#1a1408;font-weight:800;font-size:14px;letter-spacing:.08em;
+  padding:17px 30px;border-radius:6px;text-decoration:none;border:0;cursor:pointer;
+  box-shadow:0 6px 22px rgba(216,179,100,.22);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(216,179,100,.32)}
+.btn-lg{font-size:15px;padding:19px 34px}
+.selos{display:flex;flex-wrap:wrap;gap:16px;margin-top:16px;font-size:12px;
+  color:var(--texto-suave);letter-spacing:.04em}
+.selos span::before{content:"✓ ";color:var(--ouro)}
+.link-suave{display:inline-block;margin-top:20px;font-size:12px;letter-spacing:.12em;
+  font-weight:700;color:var(--ouro);text-decoration:none;border-bottom:1px solid rgba(216,179,100,.4);
+  padding-bottom:2px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:56px 0 64px;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-180px;top:-120px;width:620px;height:620px;
+  border-radius:50%;background:radial-gradient(circle,rgba(216,179,100,.13),transparent 62%);
+  pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;grid-template-areas:"a img" "b img";column-gap:48px;row-gap:0;align-items:center;position:relative;z-index:1}
+.hero-a{grid-area:a;align-self:end}.hero-b{grid-area:b;align-self:start}.hero-img{grid-area:img}
+.hero h1{font-size:clamp(34px,6.4vw,62px);text-transform:uppercase;letter-spacing:-.025em}
+.hero .sub{font-size:17px;max-width:46ch}
+.preco-linha{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:26px 0 20px;
+  padding-top:22px;border-top:1px solid var(--linha)}
+.preco-rotulo{font-size:11px;letter-spacing:.16em;color:var(--texto-suave);font-weight:700}
+.preco{font-size:30px;font-weight:800;color:var(--ouro)}
+.preco-obs{font-size:13px;color:var(--texto-suave)}
+.hero-img{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--linha);
+  box-shadow:0 26px 60px rgba(0,0,0,.55)}
+
+/* ---------- números ---------- */
+.numeros{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px;
+  border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);padding:26px 0}
+.num b{display:block;font-size:34px;color:var(--ouro);line-height:1;font-weight:800}
+.num span{display:block;margin-top:8px;font-size:11px;letter-spacing:.14em;color:var(--texto-suave);font-weight:600}
+
+/* ---------- colunas ---------- */
+.tres{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;
+  border-top:1px solid var(--linha)}
+.tres>div{padding:30px 26px 6px;border-right:1px solid var(--linha)}
+.tres>div:last-child{border-right:0}
+.tres>div:first-child{padding-left:0}
+.tres .n{font-size:12px;font-weight:800;color:var(--ouro);letter-spacing:.1em}
+.tres h3{font-size:22px;margin:14px 0 10px;font-weight:600;letter-spacing:-.01em}
+.tres p{color:var(--texto-suave);font-size:14.5px}
+
+/* ---------- duas colunas creme ---------- */
+.duas{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:start}
+.duas h2{font-size:clamp(26px,4.2vw,40px)}
+.duas .txt{font-size:16px;line-height:1.75}
+.duas .txt b{color:var(--tinta)}
+
+/* ---------- cronograma ---------- */
+.trilha{display:flex;align-items:center;gap:0;margin:40px 0 22px}
+.trilha .bola{flex:0 0 auto;width:38px;height:38px;border-radius:50%;
+  background:linear-gradient(180deg,var(--ouro-claro),var(--ouro-escuro));
+  color:#1a1408;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px}
+.trilha .fio{flex:1 1 auto;height:2px;background:linear-gradient(90deg,var(--ouro-escuro),rgba(184,145,63,.35))}
+.dias{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+.dia{background:#fff;border:1px solid var(--linha-creme);border-radius:10px;padding:16px 14px}
+.dia .d{font-size:10px;letter-spacing:.14em;font-weight:800;color:var(--ouro-escuro)}
+.dia h3{font-size:15px;margin:8px 0 8px;font-weight:700;color:var(--tinta);line-height:1.2}
+.dia p{font-size:12.5px;line-height:1.5;color:var(--texto-creme)}
+.faixa{margin-top:26px;background:var(--preto);color:var(--creme);border-radius:8px;
+  padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;
+  font-size:13.5px}
+.faixa b{color:var(--ouro);font-size:11px;letter-spacing:.16em}
+
+/* ---------- bônus ---------- */
+.bonus{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:38px}
+.card{background:#0f0e0c;border:1px solid var(--linha);border-radius:14px;padding:28px}
+.card-topo{display:flex;align-items:flex-start;gap:18px}
+.badge{flex:0 0 auto;width:58px;height:58px;border-radius:12px;
+  background:linear-gradient(180deg,var(--ouro-claro),var(--ouro-escuro));
+  color:#1a1408;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center}
+.card .rot{font-size:10.5px;letter-spacing:.16em;font-weight:800;color:var(--ouro)}
+.card h3{font-size:24px;margin:8px 0 12px;font-weight:600}
+.card p{color:var(--texto-suave);font-size:14.5px}
+.lista{list-style:none;padding:0;margin:18px 0 0}
+.lista li{position:relative;padding-left:24px;margin-bottom:9px;font-size:14px;color:var(--texto-suave)}
+.lista li::before{content:"✓";position:absolute;left:0;color:var(--ouro);font-weight:700}
+.nota{margin-top:18px;border-left:3px solid var(--ouro);background:rgba(216,179,100,.07);
+  padding:13px 16px;font-size:13px;color:var(--texto-suave);border-radius:0 6px 6px 0}
+.nota b{color:var(--creme)}
+.faixa-bonus{margin-top:22px;border:1px solid var(--linha);border-radius:8px;padding:15px 22px;
+  text-align:center;font-size:13.5px;color:var(--texto-suave)}
+.faixa-bonus b{color:var(--ouro);letter-spacing:.14em;font-size:11.5px}
+
+/* ---------- para você ---------- */
+.parvoce{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px;align-items:center}
+.parvoce img{border-radius:14px;border:1px solid var(--linha);box-shadow:0 22px 50px rgba(0,0,0,.5)}
+
+/* ---------- quem ensina ---------- */
+.ensina{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.ensina img{border-radius:14px;border:1px solid var(--linha)}
+.ensina .assin{margin-top:22px;font-size:13px;letter-spacing:.1em;color:var(--ouro);font-weight:700}
+
+/* ---------- oferta ---------- */
+.oferta{background:linear-gradient(180deg,#14110b,#090909)}
+.inclui{background:#0f0e0c;border:1px solid var(--linha);border-radius:14px;padding:30px;margin-top:34px}
+.inclui h3{font-size:21px;font-weight:600;margin-bottom:20px}
+.inclui .grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 34px}
+.caixa-preco{margin:30px auto 0;max-width:340px;text-align:center;background:#0f0e0c;
+  border:1px solid rgba(216,179,100,.35);border-radius:14px;padding:26px}
+.caixa-preco .r{font-size:11px;letter-spacing:.18em;color:var(--ouro);font-weight:800}
+.caixa-preco .v{font-size:46px;font-weight:800;margin:10px 0 6px;letter-spacing:-.02em}
+.caixa-preco .v small{font-size:20px;color:var(--texto-suave);font-weight:600;margin-right:4px}
+.caixa-preco .o{font-size:12.5px;color:var(--texto-suave)}
+.garantia{margin:26px auto 0;max-width:620px;display:flex;gap:16px;align-items:flex-start;
+  border:1px solid rgba(216,179,100,.3);background:rgba(216,179,100,.06);border-radius:12px;padding:18px 22px}
+.garantia .sel{flex:0 0 auto;width:34px;height:34px;border-radius:50%;border:2px solid var(--ouro);
+  color:var(--ouro);display:flex;align-items:center;justify-content:center;font-weight:800}
+.garantia b{display:block;font-size:12px;letter-spacing:.14em;color:var(--ouro);margin-bottom:5px}
+.garantia p{font-size:13.5px;color:var(--texto-suave)}
+.centro{text-align:center}
+.mini{margin-top:14px;font-size:12px;color:var(--texto-suave)}
+.mini span{margin:0 8px}
+
+/* ---------- faq ---------- */
+.faq{margin-top:34px;border-top:1px solid var(--linha)}
+details{border-bottom:1px solid var(--linha)}
+summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;font-size:17px;font-weight:600;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:6px;top:17px;font-size:22px;color:var(--ouro);font-weight:400}
+details[open] summary::after{content:"–"}
+details p{padding:0 0 22px;color:var(--texto-suave);font-size:15px;max-width:72ch}
+.duvida{margin-top:28px;border:1px solid var(--linha);border-radius:12px;padding:22px;text-align:center}
+.duvida p{color:var(--texto-suave);font-size:14.5px}
+.duvida a{display:inline-block;margin-top:10px;color:var(--ouro);font-weight:800;font-size:12.5px;
+  letter-spacing:.12em;text-decoration:none;border-bottom:1px solid rgba(216,179,100,.4)}
+
+/* ---------- captura ---------- */
+.captura{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.cx-form{background:#0f0e0c;border:1px solid var(--linha);border-radius:14px;padding:28px}
+.cx-form .btn{width:100%;margin-top:6px}
+.cx-form .obs{margin-top:14px;font-size:12px;color:var(--texto-suave);text-align:center}
+
+/* ---------- privacidade ---------- */
+.priv{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+.priv-card{background:#fff;border:1px solid var(--linha-creme);border-radius:12px;padding:22px}
+.priv-card h3{font-size:17px;font-weight:600;color:var(--tinta);margin-bottom:10px}
+.priv-card p{font-size:14px;color:var(--texto-creme)}
+.atual{margin-top:20px;font-size:12.5px;color:#8a8171}
+
+/* ---------- rodapé ---------- */
+footer{background:var(--preto);border-top:1px solid var(--linha);padding:44px 0;text-align:center}
+footer .marca{font-size:15px;margin-bottom:8px}
+footer p{color:var(--texto-suave);font-size:14px}
+footer nav{margin:16px 0 12px;font-size:13px}
+footer nav a{color:var(--ouro);text-decoration:none;margin:0 10px}
+footer .copy{font-size:12px;color:#6d6659}
+
+/* ---------- whatsapp ---------- */
+.zap-fixo{position:fixed;right:18px;bottom:18px;z-index:60;display:inline-flex;align-items:center;gap:9px;
+  background:var(--zap);color:#08310f;font-weight:800;font-size:12.5px;letter-spacing:.06em;
+  padding:13px 20px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.4)}
+.zap-fixo::before{content:"";width:8px;height:8px;border-radius:50%;background:#08310f}
+
+/* ---------- animação de entrada ---------- */
+.rv{opacity:0;transform:translateY(16px)}
+.rv-on{opacity:1;transform:none;transition:opacity .5s ease,transform .5s ease}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+
+/* ---------- responsivo ---------- */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;grid-template-areas:"a" "img" "b";row-gap:26px}
+  .hero-img{max-width:340px;width:100%;margin:0 auto}
+  .duas,.parvoce,.ensina,.captura{grid-template-columns:1fr;gap:34px}
+  .parvoce img,.ensina img{max-width:min(420px,100%);margin:0 auto}
+  .hero-grid>*,.duas>*,.parvoce>*,.ensina>*,.captura>*{min-width:0}
+  .dias{grid-template-columns:repeat(4,1fr)}
+  .bonus,.priv{grid-template-columns:1fr}
+  .tres{grid-template-columns:1fr}
+  .tres>div{border-right:0;border-bottom:1px solid var(--linha);padding:24px 0 18px}
+  .inclui .grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .sec{padding:54px 0}
+  .hd-meio{display:none}
+  .numeros{grid-template-columns:1fr 1fr;gap:22px 14px}
+  .dias{grid-template-columns:1fr 1fr}
+  .faixa{flex-direction:column;text-align:center;gap:8px}
+  .btn{width:100%}
+  .hero h1{font-size:clamp(30px,9vw,42px)}
+  .zap-fixo{right:12px;bottom:12px;padding:12px 16px;font-size:11.5px}
+  body{padding-bottom:64px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hd">
+    <span class="marca">CAIXA RÁPIDO</span>
+    <span class="hd-meio">DESAFIO PRÁTICO DE 7 DIAS</span>
+    <a class="hd-cta ck" href="https://pay.hotmart.com/U106844978T?sck=site_caixa_rapido">COMEÇAR POR R$ 97</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-a">
+      <p class="rotulo">Para cabeleireiras que querem crescer</p>
+      <h1>Atraia mais clientes.<br><span class="ouro">Venda mais</span><br>no seu salão.</h1>
+    </div>
+    <a class="hero-img ck" href="https://pay.hotmart.com/U106844978T?sck=site_caixa_rapido" aria-label="Conheça o desafio Caixa Rápido 7 Dias">
+      <img src="hero-agenda.webp" width="864" height="1080" alt="Caixa Rápido — desafio de 7 dias: não é só sobre ter mais agenda" fetchpriority="high" decoding="async">
+    </a>
+    <div class="hero-b">
+      <p class="sub">Em 7 dias, aprenda ações simples para atrair clientes e aproveitar melhor cada atendimento — sem trabalhar mais horas ou vender de forma insistente.</p>
+      <div class="preco-linha">
+        <span class="preco-rotulo">ACESSO AO DESAFIO</span>
+        <span class="preco">R$ 97,00</span>
+        <span class="preco-obs">pagamento único</span>
+      </div>
+      <a class="btn btn-lg ck" href="https://pay.hotmart.com/U106844978T?sck=site_caixa_rapido">QUERO COMEÇAR POR R$ 97 <span aria-hidden="true">→</span></a>
+      <div class="selos"><span>Garantia de 7 dias</span><span>Acesso pela Hotmart</span><span>Compra segura</span></div>
+      <a class="link-suave" href="#captura">AINDA ESTOU DECIDINDO — QUERO RECEBER DICAS</a>
+    </div>
+  </div>
+</section>
+
+<!-- DOR -->
+<section class="sec">
+  <div class="wrap">
+    <p class="rotulo rv">Seu esforço precisa aparecer no caixa</p>
+    <h2 class="titulo rv" style="max-width:20ch">Você atende todos os dias, passa horas trabalhando em pé, mas sente que o faturamento do salão não sai do lugar?</h2>
+    <p class="sub rv">O <b>Caixa Rápido 7 Dias: Como Atrair Mais Clientes e Vender Mais no Salão de Beleza</b> foi criado para mudar esse cenário com ações simples e possíveis de aplicar na rotina.</p>
+    <p class="sub rv">Durante 7 dias, você receberá uma missão para colocar em prática diretamente no salão.</p>
+    <div class="numeros">
+      <div class="num rv"><b>7</b><span>DIAS DE DESAFIO</span></div>
+      <div class="num rv"><b>7</b><span>MISSÕES PRÁTICAS</span></div>
+      <div class="num rv"><b>2</b><span>BÔNUS INCLUÍDOS</span></div>
+      <div class="num rv"><b>R$ 97</b><span>PAGAMENTO ÚNICO</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE VAI DESENVOLVER -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <p class="rotulo rv">O que você vai desenvolver</p>
+    <h2 class="titulo rv">Mais oportunidades em cada atendimento.</h2>
+    <div class="tres">
+      <div class="rv"><span class="n">01</span><h3>Atrair</h3><p>Ações para despertar interesse e trazer novas clientes para o salão.</p></div>
+      <div class="rv"><span class="n">02</span><h3>Aproveitar</h3><p>Um novo olhar para identificar necessidades durante cada atendimento.</p></div>
+      <div class="rv"><span class="n">03</span><h3>Vender naturalmente</h3><p>Serviços, produtos e home care sem pressionar ou parecer uma “vendedora chata”.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAIXA MAIS FORTE -->
+<section class="sec sec-creme">
+  <div class="wrap duas">
+    <div>
+      <p class="rotulo rv">Pequenas vendas. Um caixa mais forte.</p>
+      <h2 class="rv">Fortaleça o caixa do salão com <span style="color:var(--ouro-escuro)">pequenas oportunidades todos os dias.</span></h2>
+    </div>
+    <p class="txt rv">Um produto de manutenção, um tratamento no lavatório ou um serviço adicional realizado na cadeira. Cada oportunidade bem aproveitada pode contribuir para <b>uma rotina de vendas mais consistente.</b></p>
+  </div>
+</section>
+
+<!-- CRONOGRAMA -->
+<section class="sec sec-creme" style="padding-top:0">
+  <div class="wrap">
+    <p class="rotulo rv">Cronograma do Caixa Rápido</p>
+    <h2 class="titulo rv" style="color:var(--tinta)">7 dias. 7 missões.<br>Um caminho visual até seu plano de vendas.</h2>
+    <p class="rv" style="margin-top:16px;max-width:66ch">Cada etapa prepara a próxima: você começa pela meta, aprende a gerar oportunidades e termina com uma rotina que pode continuar aplicando no salão.</p>
+    <div class="trilha" aria-hidden="true">
+      <span class="bola">1</span><span class="fio"></span>
+      <span class="bola">2</span><span class="fio"></span>
+      <span class="bola">3</span><span class="fio"></span>
+      <span class="bola">4</span><span class="fio"></span>
+      <span class="bola">5</span><span class="fio"></span>
+      <span class="bola">6</span><span class="fio"></span>
+      <span class="bola">7</span>
+    </div>
+    <div class="dias">
+      <div class="dia rv"><span class="d">DIA 1</span><h3>Meta do Caixa Rápido</h3><p>Defina uma meta de vendas clara e possível para a realidade do seu salão.</p></div>
+      <div class="dia rv"><span class="d">DIA 2</span><h3>Mais Clientes</h3><p>Aplique ações práticas para despertar interesse e atrair novas clientes.</p></div>
+      <div class="dia rv"><span class="d">DIA 3</span><h3>Oportunidades na Cadeira</h3><p>Identifique o que cada cliente precisa durante o atendimento.</p></div>
+      <div class="dia rv"><span class="d">DIA 4</span><h3>Venda Natural</h3><p>Ofereça produtos e serviços sem parecer insistente.</p></div>
+      <div class="dia rv"><span class="d">DIA 5</span><h3>Home Care que Vende</h3><p>Indique a manutenção certa para prolongar o resultado em casa.</p></div>
+      <div class="dia rv"><span class="d">DIA 6</span><h3>Quebra de Objeções</h3><p>Responda com segurança a frases como “está caro” ou “vou pensar”.</p></div>
+      <div class="dia rv"><span class="d">DIA 7</span><h3>Plano de Vendas</h3><p>Crie uma rotina para continuar atraindo clientes e vendendo mais todos os dias.</p></div>
+    </div>
+    <div class="faixa"><b>INÍCIO</b><span>Da meta ao plano de vendas em 7 etapas práticas</span><b>PLANO PRONTO</b></div>
+  </div>
+</section>
+
+<!-- CTA MEIO -->
+<section class="sec centro">
+  <div class="wrap">
+    <p class="rotulo rv">Aplicação direta no salão</p>
+    <h2 class="titulo rv">Uma missão simples por dia.<br>Uma estratégia para continuar vendendo.</h2>
+    <p class="rv" style="margin:18px auto 30px;color:var(--texto-suave);max-width:58ch">Você não precisa esperar a agenda lotar para começar a fortalecer seu caixa.</p>
+    <a class="btn btn-lg ck" href="https://pay.hotmart.com/U106844978T?sck=site_caixa_rapido">QUERO RECEBER AS 7 MISSÕES <span aria-hidden="true">→</span></a>
+    <div class="selos" style="justify-content:center"><span>Pagamento único de R$ 97</span><span>Garantia de 7 dias</span></div>
+  </div>
+</section>
+
+<!-- BÔNUS -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <p class="rotulo rv">Mais recursos para colocar em prática</p>
+    <h2 class="titulo rv">Você também recebe 2 bônus.</h2>
+    <p class="sub rv">Conteúdos e recursos de apoio para ganhar agilidade e continuar aplicando o método.</p>
+    <div class="bonus">
+      <div class="card rv">
+        <div class="card-topo">
+          <span class="badge">IA</span>
+          <div><span class="rot">BÔNUS 01</span><h3>IA para Comunicação e Vendas</h3></div>
+        </div>
+        <p>Aulas práticas para aprender a usar inteligência artificial na criação de mensagens de divulgação, ofertas, legendas e respostas para clientes.</p>
+        <ul class="lista">
+          <li>Ideias de divulgação com IA</li>
+          <li>Mensagens para WhatsApp</li>
+          <li>Textos de ofertas e follow-up</li>
+        </ul>
+        <div class="nota"><b>Importante:</b> este bônus é um treinamento. Não inclui ferramenta, conta ou assinatura de IA.</div>
+      </div>
+      <div class="card rv">
+        <div class="card-topo">
+          <span class="badge">APP</span>
+          <div><span class="rot">BÔNUS 02</span><h3>app USALON 30D</h3></div>
+        </div>
+        <p>Você receberá acesso ao app <b style="color:var(--creme)">USALON 30D</b> como recurso de apoio ao treinamento.</p>
+        <ul class="lista">
+          <li>O aplicativo se chama USALON 30D</li>
+          <li>Acesso disponibilizado como bônus</li>
+          <li>Orientações de uso dentro do treinamento</li>
+        </ul>
+      </div>
+    </div>
+    <div class="faixa-bonus"><b>OS 2 BÔNUS ESTÃO INCLUÍDOS</b> &nbsp;sem custo adicional no acesso ao Caixa Rápido 7 Dias</div>
+  </div>
+</section>
+
+<!-- PARA VOCÊ -->
+<section class="sec">
+  <div class="wrap parvoce">
+    <img class="rv" src="oferta.webp" width="800" height="800" alt="Caixa Rápido 7 Dias — mais clientes e mais vendas no seu salão" loading="lazy" decoding="async">
+    <div>
+      <p class="rotulo rv">Este desafio é para você</p>
+      <h2 class="titulo rv">Você já tem conhecimento e talento. Agora precisa de uma estratégia.</h2>
+      <ul class="lista rv" style="margin-top:24px">
+        <li>Quer atrair novas clientes</li>
+        <li>Deseja aproveitar melhor cada atendimento</li>
+        <li>Quer indicar home care com naturalidade</li>
+        <li>Precisa vender mais sem aumentar sua jornada</li>
+      </ul>
+      <a class="btn ck rv" style="margin-top:28px" href="https://pay.hotmart.com/U106844978T?sck=site_caixa_rapido">QUERO ENTRAR NO DESAFIO <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- QUEM ENSINA -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap ensina">
+    <img class="rv" src="casal.webp" width="900" height="600" alt="Marcelo e Milene, responsáveis pelo Caixa Rápido 7 Dias" loading="lazy" decoding="async">
+    <div>
+      <p class="rotulo rv">Quem ensina</p>
+      <h2 class="titulo rv">Quem está do outro lado do desafio.</h2>
+      <p class="sub rv">Somos Marcelo e Milene. A Milene é cabeleireira e educadora capilar e atende no salão todos os dias — as ações do Caixa Rápido nasceram dessa rotina, e não da teoria.</p>
+      <p class="sub rv">Juntos, trabalhamos com profissionais de salão que querem aproveitar melhor cada atendimento e vender com naturalidade, sem depender de promoção nem aumentar a jornada.</p>
+      <p class="assin rv">MARCELO &amp; MILENE · SÃO BORJA / RS</p>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="sec oferta">
+  <div class="wrap centro">
+    <p class="rotulo rv">Sua decisão pode começar hoje</p>
+    <h2 class="titulo rv">Entre no Caixa Rápido 7 Dias.</h2>
+    <p class="rv" style="margin:18px auto 0;color:var(--texto-suave);max-width:66ch">Você recebe um plano prático para transformar conhecimento e talento em uma rotina mais estratégica de vendas.</p>
+
+    <div class="inclui rv" style="text-align:left">
+      <h3>O que está incluído</h3>
+      <div class="grid">
+        <ul class="lista" style="margin:0">
+          <li>7 missões práticas, uma para cada dia</li>
+          <li>Ações para atrair novas clientes</li>
+          <li>Estratégias para identificar oportunidades na cadeira</li>
+          <li>Venda natural de serviços, produtos e home care</li>
+        </ul>
+        <ul class="lista" style="margin:0">
+          <li>Respostas para objeções como “está caro” e “vou pensar”</li>
+          <li>Plano para continuar vendendo após o desafio</li>
+          <li><b style="color:var(--creme)">Bônus IA para Comunicação e Vendas:</b> treinamento para aprender a usar inteligência artificial em comunicação e vendas — não inclui ferramenta, conta ou assinatura de IA</li>
+          <li><b style="color:var(--creme)">Bônus app USALON 30D:</b> acesso ao app USALON 30D</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="caixa-preco rv">
+      <div class="r">INVESTIMENTO ÚNICO</div>
+      <div class="v"><small>R$</small>97,00</div>
+      <div class="o">treinamento + 2 bônus incluídos</div>
+    </div>
+
+    <div class="garantia rv">
+      <span class="sel">✓</span>
+      <div style="text-align:left">
+        <b>VOCÊ TEM 7 DIAS DE GARANTIA</b>
+        <p>Conheça o treinamento com tranquilidade. A garantia segue as condições apresentadas pela Hotmart.</p>
+      </div>
+    </div>
+
+    <a class="btn btn-lg ck rv" style="margin-top:28px" href="https://pay.hotmart.com/U106844978T?sck=site_caixa_rapido">SIM, QUERO O TREINAMENTO + BÔNUS <span aria-hidden="true">→</span></a>
+    <p class="mini"><span>Compra segura</span>•<span>Pagamento processado pela Hotmart</span>•<span>Acesso após a confirmação</span></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec">
+  <div class="wrap">
+    <p class="rotulo rv">Dúvidas frequentes</p>
+    <h2 class="titulo rv">Antes de começar</h2>
+    <div class="faq">
+      <details><summary>Preciso entender de marketing ou vendas?</summary><p>Não. As missões foram pensadas para uma aplicação simples na rotina do salão.</p></details>
+      <details><summary>Preciso ter a agenda lotada?</summary><p>Não. O desafio ensina a atrair clientes e aproveitar melhor cada atendimento, sem depender de uma agenda completamente cheia.</p></details>
+      <details><summary>Como receberei o treinamento?</summary><p>O acesso será entregue pela Hotmart após a confirmação da compra.</p></details>
+      <details><summary>Como funciona a garantia?</summary><p>O treinamento possui garantia de 7 dias, conforme as condições apresentadas pela Hotmart.</p></details>
+      <details><summary>O pagamento é mensal?</summary><p>Não. O investimento é único: R$ 97,00.</p></details>
+    </div>
+    <div class="duvida">
+      <p>Ainda ficou com alguma dúvida?</p>
+      <a class="zap" href="https://wa.me/5555996472886?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Caixa%20R%C3%A1pido%207%20Dias.">FALE CONOSCO PELO WHATSAPP</a>
+    </div>
+  </div>
+</section>
+
+<!-- CAPTURA -->
+<section class="sec" id="captura" style="background:#0c0b09">
+  <div class="wrap captura">
+    <div>
+      <p class="rotulo rv">Ainda não está pronta para comprar?</p>
+      <h2 class="titulo rv">Comece recebendo ideias práticas para o seu salão.</h2>
+      <p class="sub rv">Chame no WhatsApp e receba conteúdos do Caixa Rápido sobre atração de clientes, oportunidades no atendimento e venda natural.</p>
+      <ul class="lista rv" style="margin-top:20px">
+        <li>Conteúdo pensado para a rotina do salão</li>
+        <li>Aplicação simples e direta</li>
+        <li>Você pode parar de receber quando quiser</li>
+      </ul>
+    </div>
+    <div class="cx-form rv">
+      <a class="btn zap" href="https://wa.me/5555996472886?text=Ol%C3%A1%21%20Ainda%20estou%20decidindo%20sobre%20o%20Caixa%20R%C3%A1pido%207%20Dias%20e%20gostaria%20de%20receber%20as%20dicas%20para%20o%20meu%20sal%C3%A3o.">QUERO RECEBER AS DICAS</a>
+      <p class="obs">Sem custo, sem compromisso e você pode pedir para parar de receber a qualquer momento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVACIDADE -->
+<section class="sec sec-creme" id="privacidade">
+  <div class="wrap">
+    <p class="rotulo rv">Política de privacidade</p>
+    <h2 class="titulo rv" style="color:var(--tinta)">Seus dados, seus direitos.</h2>
+    <p class="rv" style="margin-top:16px;max-width:76ch">Ao entrar em contato pelo WhatsApp, você autoriza o Caixa Rápido a enviar conteúdos e novidades. Os dados de pagamento continuam sendo informados somente no ambiente seguro da Hotmart.</p>
+    <div class="priv">
+      <div class="priv-card rv"><h3>Dados nesta página</h3><p>Esta página não coleta cadastro. O contato acontece pelo WhatsApp, e usamos apenas as informações que você envia voluntariamente por lá para responder e enviar conteúdos do Caixa Rápido.</p></div>
+      <div class="priv-card rv"><h3>Compra segura</h3><p>Os dados necessários para pagamento e entrega do treinamento são informados diretamente à Hotmart e tratados conforme as políticas daquela plataforma.</p></div>
+      <div class="priv-card rv"><h3>Uso e armazenamento</h3><p>Seu contato é guardado com segurança e não será vendido. Você pode solicitar correção, acesso ou exclusão, além de pedir para parar de receber mensagens a qualquer momento.</p></div>
+      <div class="priv-card rv"><h3>Seus direitos pela LGPD</h3><p>Para exercer seus direitos sobre os dados de contato, use o botão de WhatsApp desta página. Para dados da compra, utilize os canais exibidos no checkout da Hotmart.</p></div>
+    </div>
+    <p class="atual">Última atualização: 15 de setembro de 2026.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="marca">CAIXA RÁPIDO</div>
+    <p>Mais clientes. Mais vendas. Mais estratégia.</p>
+    <nav>
+      <a href="#privacidade">Política de Privacidade</a>
+      <a class="ck" href="https://pay.hotmart.com/U106844978T?sck=site_caixa_rapido">Compra segura pela Hotmart</a>
+    </nav>
+    <p class="copy">© 2026 Caixa Rápido. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a class="zap-fixo zap" href="https://wa.me/5555996472886?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Caixa%20R%C3%A1pido%207%20Dias.">FALAR NO WHATSAPP</a>
+
+<script>
+(function(){
+  // revelar seções ao rolar (sem JS, tudo continua visível)
+  var alvos=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window && alvos.length){
+    var ob=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('rv-on'); ob.unobserve(e.target); } });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.05});
+    alvos.forEach(function(el){ ob.observe(el); });
+  } else {
+    alvos.forEach(function(el){ el.classList.add('rv-on'); });
+  }
+
+  // Pixel da Meta carregado só depois que a página já apareceu
+  var carregado=false;
+  function pixel(){
+    if(carregado) return; carregado=true;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1585312623327351');
+    fbq('track','PageView');
+    fbq('track','ViewContent',{content_name:'Caixa Rapido 7 Dias',content_category:'landing',value:97,currency:'BRL'});
+  }
+  if('requestIdleCallback' in window){requestIdleCallback(pixel,{timeout:2500});}
+  else{setTimeout(pixel,1800);}
+  ['pointerdown','keydown','touchstart','scroll'].forEach(function(ev){
+    window.addEventListener(ev,pixel,{once:true,passive:true});
+  });
+
+  // eventos de conversão
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a'); if(!a) return;
+    pixel();
+    if(a.classList.contains('ck') && window.fbq){
+      fbq('track','InitiateCheckout',{content_name:'Caixa Rapido 7 Dias',value:97,currency:'BRL'});
+    } else if(a.classList.contains('zap') && window.fbq){
+      fbq('track','Contact',{content_name:'WhatsApp Caixa Rapido'});
+    }
+  },true);
+})();
+</script>
+</body>
+</html>
