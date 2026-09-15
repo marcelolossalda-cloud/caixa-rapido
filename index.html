@@ -6,6 +6,7 @@
 <title>Caixa Rápido — 7 Dias | Mais clientes e vendas no seu salão</title>
 <meta name="description" content="Desafio prático de 7 dias para cabeleireiras: atraia mais clientes e venda mais no salão com ações simples, sem trabalhar mais horas. Pagamento único de R$ 97 com garantia de 7 dias.">
 <meta name="theme-color" content="#090909">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d8b364'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='700' font-size='26' fill='%23111'%3ECR%3C/text%3E%3C/svg%3E">
 <link rel="canonical" href="https://curso.marceloemilene.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Caixa Rápido — 7 Dias">
@@ -33,6 +34,7 @@ h1,h2,h3{margin:0;line-height:1.08;font-weight:700;letter-spacing:-.02em}
 p{margin:0}
 .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
 .sec{padding:72px 0}
+[id]{scroll-margin-top:64px}
 .sec-creme{background:var(--creme);color:var(--tinta)}
 .sec-creme .rotulo{color:var(--ouro-escuro)}
 .sec-creme p{color:var(--texto-creme)}
@@ -49,7 +51,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(9,9,9,.92);
   height:62px;width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
 .marca{font-size:14px;letter-spacing:.2em;font-weight:700;color:var(--ouro);white-space:nowrap}
 .hd-meio{font-size:11px;letter-spacing:.2em;color:var(--texto-suave);font-weight:600}
-.hd-cta{font-size:11px;letter-spacing:.12em;font-weight:700;padding:9px 16px;
+.hd-cta{font-size:11px;letter-spacing:.12em;font-weight:700;padding:12px 16px;
   border:1px solid var(--ouro);color:var(--ouro);border-radius:4px;text-decoration:none;white-space:nowrap}
 .hd-cta:hover{background:var(--ouro);color:#111}
 
@@ -64,9 +66,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(9,9,9,.92);
 .selos{display:flex;flex-wrap:wrap;gap:16px;margin-top:16px;font-size:12px;
   color:var(--texto-suave);letter-spacing:.04em}
 .selos span::before{content:"✓ ";color:var(--ouro)}
-.link-suave{display:inline-block;margin-top:20px;font-size:12px;letter-spacing:.12em;
-  font-weight:700;color:var(--ouro);text-decoration:none;border-bottom:1px solid rgba(216,179,100,.4);
-  padding-bottom:2px}
+.link-suave{display:inline-block;margin-top:12px;font-size:12px;letter-spacing:.12em;
+  font-weight:700;color:var(--ouro);text-decoration:none;padding:12px 0;
+  background:linear-gradient(rgba(216,179,100,.4),rgba(216,179,100,.4)) no-repeat left calc(100% - 10px)/100% 1px}
 
 /* ---------- hero ---------- */
 .hero{position:relative;padding:56px 0 64px;overflow:hidden}
@@ -183,8 +185,8 @@ details[open] summary::after{content:"–"}
 details p{padding:0 0 22px;color:var(--texto-suave);font-size:15px;max-width:72ch}
 .duvida{margin-top:28px;border:1px solid var(--linha);border-radius:12px;padding:22px;text-align:center}
 .duvida p{color:var(--texto-suave);font-size:14.5px}
-.duvida a{display:inline-block;margin-top:10px;color:var(--ouro);font-weight:800;font-size:12.5px;
-  letter-spacing:.12em;text-decoration:none;border-bottom:1px solid rgba(216,179,100,.4)}
+.duvida a{display:inline-block;margin-top:4px;padding:12px 4px;color:var(--ouro);font-weight:800;font-size:12.5px;
+  letter-spacing:.12em;text-decoration:none;background:linear-gradient(rgba(216,179,100,.4),rgba(216,179,100,.4)) no-repeat center calc(100% - 9px)/calc(100% - 8px) 1px}
 
 /* ---------- captura ---------- */
 .captura{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
@@ -204,7 +206,7 @@ footer{background:var(--preto);border-top:1px solid var(--linha);padding:44px 0;
 footer .marca{font-size:15px;margin-bottom:8px}
 footer p{color:var(--texto-suave);font-size:14px}
 footer nav{margin:16px 0 12px;font-size:13px}
-footer nav a{color:var(--ouro);text-decoration:none;margin:0 10px}
+footer nav a{color:var(--ouro);text-decoration:none;margin:0 6px;display:inline-block;padding:12px 4px}
 footer .copy{font-size:12px;color:#6d6659}
 
 /* ---------- whatsapp ---------- */
@@ -571,9 +573,11 @@ footer .copy{font-size:12px;color:#6d6659}
     window.addEventListener(ev,pixel,{once:true,passive:true});
   });
 
-  // eventos de conversão
+  // eventos de conversão + rolagem interna sem trocar a URL
   document.addEventListener('click',function(e){
     var a=e.target.closest('a'); if(!a) return;
+    var h=a.getAttribute('href')||'';
+    if(h.charAt(0)==='#'){ var alvo=document.getElementById(h.slice(1)); if(alvo){ e.preventDefault(); alvo.scrollIntoView({behavior:'smooth',block:'start'}); } return; }
     pixel();
     if(a.classList.contains('ck') && window.fbq){
       fbq('track','InitiateCheckout',{content_name:'Caixa Rapido 7 Dias',value:97,currency:'BRL'});
