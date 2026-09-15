@@ -215,7 +215,7 @@ footer .copy{font-size:12px;color:#6d6659}
 
 /* ---------- animação de entrada ---------- */
 .rv{opacity:0;transform:translateY(16px)}
-.rv-on{opacity:1;transform:none;transition:opacity .5s ease,transform .5s ease}
+.rv-on{opacity:1;transform:none;transition:opacity .35s ease,transform .35s ease}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
 
 /* ---------- responsivo ---------- */
@@ -397,7 +397,7 @@ footer .copy{font-size:12px;color:#6d6659}
 <!-- PARA VOCÊ -->
 <section class="sec">
   <div class="wrap parvoce">
-    <img class="rv" src="oferta.webp" width="800" height="800" alt="Caixa Rápido 7 Dias — mais clientes e mais vendas no seu salão" loading="lazy" decoding="async">
+    <img class="rv" src="oferta.webp" width="800" height="800" alt="Caixa Rápido 7 Dias — mais clientes e mais vendas no seu salão" loading="eager" decoding="async">
     <div>
       <p class="rotulo rv">Este desafio é para você</p>
       <h2 class="titulo rv">Você já tem conhecimento e talento. Agora precisa de uma estratégia.</h2>
@@ -415,7 +415,7 @@ footer .copy{font-size:12px;color:#6d6659}
 <!-- QUEM ENSINA -->
 <section class="sec" style="padding-top:0">
   <div class="wrap ensina">
-    <img class="rv" src="casal.webp" width="900" height="600" alt="Marcelo e Milene, responsáveis pelo Caixa Rápido 7 Dias" loading="lazy" decoding="async">
+    <img class="rv" src="casal.webp" width="900" height="600" alt="Marcelo e Milene, responsáveis pelo Caixa Rápido 7 Dias" loading="eager" decoding="async">
     <div>
       <p class="rotulo rv">Quem ensina</p>
       <h2 class="titulo rv">Quem está do outro lado do desafio.</h2>
@@ -546,7 +546,7 @@ footer .copy{font-size:12px;color:#6d6659}
   if('IntersectionObserver' in window && alvos.length){
     var ob=new IntersectionObserver(function(es){
       es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('rv-on'); ob.unobserve(e.target); } });
-    },{rootMargin:'0px 0px -8% 0px',threshold:.05});
+    },{rootMargin:'0px 0px 12% 0px',threshold:.01});
     alvos.forEach(function(el){ ob.observe(el); });
   } else {
     alvos.forEach(function(el){ el.classList.add('rv-on'); });
