@@ -24,7 +24,19 @@
 <meta name="twitter:image" content="https://curso.marceloemilene.com/hero-agenda.webp">
 <link rel="preload" as="image" href="hero-agenda.webp" imagesrcset="hero-agenda-480.webp 480w, hero-agenda-720.webp 720w, hero-agenda.webp 864w" imagesizes="(max-width:980px) min(340px, calc(100vw - 40px)), 45vw" fetchpriority="high">
 <link rel="preconnect" href="https://pay.hotmart.com">
-<link rel="dns-prefetch" href="//connect.facebook.net">
+<link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1585312623327351');
+fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'Caixa Rapido 7 Dias',content_category:'landing',value:97,currency:'BRL'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1585312623327351&amp;ev=PageView&amp;noscript=1" alt=""></noscript>
 <style>
 :root{
   --preto:#090909; --preto-2:#0c0b09; --creme:#f8f2e6; --creme-2:#efe7d6;
@@ -569,31 +581,11 @@ footer .copy{font-size:12px;color:#6d6659}
     alvos.forEach(function(el){ el.classList.add('rv-on'); });
   }
 
-  // Pixel da Meta carregado só depois que a página já apareceu
-  var carregado=false;
-  function pixel(){
-    if(carregado) return; carregado=true;
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init','1585312623327351');
-    fbq('track','PageView');
-    fbq('track','ViewContent',{content_name:'Caixa Rapido 7 Dias',content_category:'landing',value:97,currency:'BRL'});
-  }
-  if('requestIdleCallback' in window){requestIdleCallback(pixel,{timeout:2500});}
-  else{setTimeout(pixel,1800);}
-  ['pointerdown','keydown','touchstart','scroll'].forEach(function(ev){
-    window.addEventListener(ev,pixel,{once:true,passive:true});
-  });
-
   // eventos de conversão + rolagem interna sem trocar a URL
   document.addEventListener('click',function(e){
     var a=e.target.closest('a'); if(!a) return;
     var h=a.getAttribute('href')||'';
     if(h.charAt(0)==='#'){ var alvo=document.getElementById(h.slice(1)); if(alvo){ e.preventDefault(); alvo.scrollIntoView({behavior:'smooth',block:'start'}); } return; }
-    pixel();
     if(a.classList.contains('ck') && window.fbq){
       fbq('track','InitiateCheckout',{content_name:'Caixa Rapido 7 Dias',value:97,currency:'BRL'});
     } else if(a.classList.contains('zap') && window.fbq){
