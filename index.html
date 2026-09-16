@@ -221,10 +221,12 @@ footer nav a{color:var(--ouro);text-decoration:none;margin:0 6px;display:inline-
 footer .copy{font-size:12px;color:#6d6659}
 
 /* ---------- whatsapp ---------- */
-.zap-fixo{position:fixed;right:18px;bottom:18px;z-index:60;display:inline-flex;align-items:center;gap:9px;
+.zap-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;width:100%;margin-top:10px;
   background:var(--zap);color:#08310f;font-weight:800;font-size:12.5px;letter-spacing:.06em;
-  padding:13px 20px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.4)}
-.zap-fixo::before{content:"";width:8px;height:8px;border-radius:50%;background:#08310f}
+  padding:16px 20px;border-radius:6px;text-decoration:none;
+  box-shadow:0 6px 22px rgba(37,211,102,.20);transition:transform .15s,box-shadow .15s}
+.zap-btn:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(37,211,102,.30)}
+.zap-btn::before{content:"";width:8px;height:8px;border-radius:50%;background:#08310f}
 
 /* ---------- animação de entrada ---------- */
 .rv{opacity:0;transform:translateY(16px)}
@@ -253,8 +255,6 @@ footer .copy{font-size:12px;color:#6d6659}
   .faixa{flex-direction:column;text-align:center;gap:8px}
   .btn{width:100%}
   .hero h1{font-size:clamp(30px,9vw,42px)}
-  .zap-fixo{right:12px;bottom:12px;padding:12px 16px;font-size:11.5px}
-  body{padding-bottom:64px}
 }
 </style>
 </head>
@@ -522,6 +522,7 @@ footer .copy{font-size:12px;color:#6d6659}
     </div>
     <div class="cx-form rv">
       <a class="btn zap" href="https://wa.me/5555996472886?text=Ol%C3%A1%21%20Ainda%20estou%20decidindo%20sobre%20o%20Caixa%20R%C3%A1pido%207%20Dias%20e%20gostaria%20de%20receber%20as%20dicas%20para%20o%20meu%20sal%C3%A3o.">QUERO RECEBER AS DICAS</a>
+      <a class="zap-btn zap" href="https://wa.me/5555996472886?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Caixa%20R%C3%A1pido%207%20Dias.">FALAR NO WHATSAPP</a>
       <p class="obs">Sem custo, sem compromisso e você pode pedir para parar de receber a qualquer momento.</p>
     </div>
   </div>
@@ -554,8 +555,6 @@ footer .copy{font-size:12px;color:#6d6659}
     <p class="copy">© 2026 Caixa Rápido. Todos os direitos reservados.</p>
   </div>
 </footer>
-
-<a class="zap-fixo zap" href="https://wa.me/5555996472886?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Caixa%20R%C3%A1pido%207%20Dias.">FALAR NO WHATSAPP</a>
 
 <script>
 (function(){
